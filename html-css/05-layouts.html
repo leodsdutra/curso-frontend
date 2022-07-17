@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+        <head>
+            <title>HTML - Layouts</title>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+            <style>*
+            {
+              box-sizing: border-box;
+            }
+
+            body {
+              font-family: Arial, Helvetica, sans-serif;
+            }
+
+            /* Style the header */
+            header {
+              background-color: #666;
+              padding: 30px;
+              text-align: center;
+              font-size: 35px;
+              color: white;
+            }
+
+            /* Create two columns/boxes that floats next to each other */
+            nav {
+              float: left;
+              width: 30%;
+               
+              background: #ccc;
+              padding: 20px;
+            }
+
+            /* Style the list inside the menu */
+            nav ul {
+              list-style-type: none;
+              padding: 0;
+            }
+
+            article {
+              float: left;
+              padding: 20px;
+              width: 70%;
+              background-color: #f1f1f1;
+            }
+
+            /* Clear floats after the columns */
+            section::after {
+              background: #ccc;
+              content: "";
+              display: table;
+              clear: both;
+            }
+
+            /* Style the footer */
+            footer {
+              background-color: #777;
+              padding: 10px;
+              text-align: center;
+              color: white;
+            }
+
+            /* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+            @media (max-width: 600px) {
+              nav, article {
+                width: 100%;
+                height: auto;
+              }
+            }
+                
+            </style>
+        </head>
+        <body>
+            <header>
+                <h2>Curso Front-end - HTML</h2>
+            </header>
+
+            <section>  
+                <nav>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#sobre">Sobre</a></li>
+                        <li><a href="./06-formularios.html">Contato</a></li>
+                    </ul>
+                </nav>
+
+                <article>
+
+                    <h1>Título Artigo</h1>
+
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus ultrices ipsum at tortor volutpat accumsan et vitae ex. Vivamus orci metus, porta at varius id, elementum non dolor. Phasellus viverra ut dolor et euismod. Nam ac metus est. Integer eget mollis nulla. Nullam lobortis vel lacus in facilisis. Proin vel condimentum lacus. Sed tempus nibh elit, nec venenatis massa efficitur vel. Donec feugiat augue tortor, euismod congue orci egestas vel. Vivamus quis consequat nibh. Duis eget fermentum elit. Integer pretium a augue lobortis sagittis. Curabitur placerat turpis at egestas tempus.</p>
+
+                    <p>Donec at nunc ut urna dignissim venenatis quis sed tortor. Etiam sit amet lacus maximus, scelerisque purus id, maximus urna. Proin ullamcorper metus ligula, ut commodo augue mattis lacinia. Mauris a accumsan lectus, ut molestie ex. Integer nec mauris id neque scelerisque accumsan vel faucibus nibh. Integer viverra tempor sapien, nec egestas lacus vulputate ac. Proin bibendum nisi sem, non sollicitudin magna vestibulum ac. Praesent iaculis ornare diam vel mattis. Proin gravida, ex quis mollis tempus, tortor orci semper nisl, id sollicitudin purus est sed ipsum. Cras congue gravida luctus.</p>
+
+                    <p>Curabitur tellus neque, rutrum nec suscipit at, rutrum nec nunc. Pellentesque ante lorem, rhoncus blandit convallis a, porttitor sed justo. Donec ut nisl vel neque pretium pretium a non justo. Donec tortor eros, malesuada pretium turpis sit amet, ultrices faucibus nunc. Sed non lorem et eros iaculis auctor non quis ipsum. In dignissim vel lorem id fringilla. Sed laoreet rutrum blandit. Nunc eu lobortis leo. Nullam lectus tortor, varius id tincidunt a, egestas ut lorem. Ut ut ultricies nunc. Fusce sodales hendrerit nunc vel vulputate. Duis in mattis leo, non iaculis orci. Pellentesque cursus sem sed justo suscipit, a malesuada nisi imperdiet. Donec quis urna at erat imperdiet tincidunt.</p>
+
+                    <p>In eget porta diam. Nam iaculis nibh id neque laoreet, quis congue lacus hendrerit. Maecenas ultricies consequat enim vitae rutrum. Vestibulum tincidunt, est at condimentum aliquet, lacus velit auctor elit, sit amet laoreet massa lacus non mi. Donec eu rutrum magna. Mauris augue dolor, molestie a cursus quis, pellentesque eu est. Praesent eget ante quam. Fusce hendrerit consectetur augue, eget mattis orci bibendum ac. Donec nisi sem, ullamcorper id aliquam ut, suscipit nec sapien. Integer eget nisi risus.</p>
+
+                    <p>Ut at nulla id lectus aliquam tempor. Vivamus ut lobortis ipsum, ut dapibus nisl. Vestibulum pharetra dictum eros eget ornare. Phasellus semper sem pellentesque tincidunt malesuada. Quisque orci tellus, scelerisque quis vulputate ut, efficitur et urna. Mauris congue ac tellus vel lobortis. Phasellus iaculis lacinia lacus sit amet lacinia. Nam lacinia auctor augue, eget iaculis tortor condimentum eu. Aliquam vestibulum augue sed justo euismod, a placerat diam iaculis. Nam et finibus ante, a luctus ex. Quisque vitae nunc quis est consequat tincidunt et in sem. Phasellus sit amet sodales erat. Pellentesque convallis felis quis rhoncus efficitur. Proin sed ipsum vehicula, finibus nisl quis, cursus risus. Nam eu massa ut nunc fringilla vulputate. Curabitur ipsum neque, aliquet id felis vel, rhoncus accumsan erat.</p>
+
+                </article>
+                
+            </section>
+
+            <footer>
+                <p>Desenvolvido por Leonardo</p>
+            </footer>
+
+    </body>
+</html>
