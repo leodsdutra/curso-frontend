@@ -1,5 +1,9 @@
 # Curso Front-end
+<<<<<<< HEAD
 #### EBAC
+=======
+#### Na EBAC
+>>>>>>> abbeb0cc8103a12671be73ef648459e9a18c8d93
 
 # GIT
 ## Conceitos de versionamento
@@ -24,7 +28,11 @@ https://git-scm.com/
  ## Criar conta no GitHub
 
  ## Clonar o projeto
+<<<<<<< HEAD
  git clone https://github.com/cavalcantemmarcelo/curso-frontend.git
+=======
+ git clone https://github.com/leodsdutra/curso-frontend.git
+>>>>>>> abbeb0cc8103a12671be73ef648459e9a18c8d93
 
  ## Commits
  Informação de alteração
